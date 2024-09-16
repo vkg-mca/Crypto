@@ -1,0 +1,3 @@
+﻿GET https://api.binance.com/api/v3/ticker/bookTicker?symbol=BTCUSDT
+###
+GET https://api.binance.com/api/v3/ticker/bookTicker?symbol=ETHUSDT

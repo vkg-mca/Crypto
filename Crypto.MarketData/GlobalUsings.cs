@@ -1,0 +1,17 @@
+﻿global using Crypto.MarketData.Commands;
+global using Crypto.MarketData.Connectors;
+global using Crypto.MarketData.Entities;
+global using Crypto.MarketData.Environment;
+global using Crypto.MarketData.Exceptions;
+global using Crypto.Utility.Json;
+global using Newtonsoft.Json;
+global using System.Buffers;
+global using System.Diagnostics;
+global using System.Text;
+global using Microsoft.Extensions.DependencyInjection;
+global using Polly.Extensions.Http;
+global using Polly;
+global using System.Net;
+global using Polly.Timeout;
+global using Crypto.Utility.Extensions;
+global using Polly.CircuitBreaker; 

@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+      <OutputType>Exe</OutputType>
+      <TargetFramework>net8.0</TargetFramework>
+      <ImplicitUsings>enable</ImplicitUsings>
+      <Nullable>enable</Nullable>
+      <LangVersion>preview</LangVersion>
+      <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+    <ItemGroup>
+        <Content Include="..\appsettings.json" Link="appsettings.json">
+	 <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\nlog.config" Link="nlog.config">
+	 <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.3.1" />
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
+        <PackageReference Include="Topshelf" Version="4.3.0" />
+        <PackageReference Include="TopShelf.ServiceInstaller" Version="4.3.0" />
+        <PackageReference Include="MassTransit" Version="8.0.16" />
+        <PackageReference Include="MassTransit.Extensions.Hosting.RabbitMq" Version="1.0.11" />
+        <PackageReference Include="MassTransit.Extensions.Logging" Version="5.5.6" />
+        <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.16" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Crypto.Binance\Crypto.Binance.csproj" />
+        <ProjectReference Include="..\Crypto.Console\Crypto.Console.csproj" />
+        <ProjectReference Include="..\Crypto.Logging\Crypto.Logging.csproj" />
+        <ProjectReference Include="..\Crypto.Middleware\Crypto.Middleware.csproj" />
+        <ProjectReference Include="..\Crypto.RunTime\Crypto.RunTime.csproj" />
+        <ProjectReference Include="..\Crypto.Utility\Crypto.Utility.csproj" />
+    </ItemGroup>
+</Project>
