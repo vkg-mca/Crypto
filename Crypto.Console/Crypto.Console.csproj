@@ -4,8 +4,12 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <LangVersion>preview</LangVersion>
-        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <LangVersion>latest</LangVersion>
+        <ProductVersion>1.0.0.0</ProductVersion>
+        <AppendRunTimeIdentifierToOutputPath>false</AppendRunTimeIdentifierToOutputPath>
+        <AppendTargetFrameworkTooutputPath>false</AppendTargetFrameworkTooutputPath>
+        <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>

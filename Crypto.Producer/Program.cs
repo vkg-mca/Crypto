@@ -37,7 +37,8 @@ internal class Program
         var tickerService = services.AddTickerProducerService(serviceProvider, appSettings);
 
         var logger = serviceProvider.GetRequiredService<ILogger<ServiceHost>>();
-        _tickerServiceHost = new ServiceHost(logger, appSettings.ServiceHostSetting.ServiceHost.Where(x => x.ServiceName.Equals(HostedServiceName.CryptoProducerService,StringComparison.OrdinalIgnoreCase)).FirstOrDefault());
+        var producerService = appSettings.ServiceHostSetting.ServiceHost.Where(x => x.ServiceName.Equals(HostedServiceName.CryptoProducerService, StringComparison.OrdinalIgnoreCase)).FirstOrDefault();
+        _tickerServiceHost = new ServiceHost(logger, producerService);
         _tickerServiceHost.HostAsWindowsService(tickerService);
     }
 

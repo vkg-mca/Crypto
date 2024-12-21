@@ -5,8 +5,12 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <LangVersion>preview</LangVersion>
-        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <LangVersion>latest</LangVersion>
+        <ProductVersion>1.0.0.0</ProductVersion>
+        <AppendRunTimeIdentifierToOutputPath>false</AppendRunTimeIdentifierToOutputPath>
+        <AppendTargetFrameworkTooutputPath>false</AppendTargetFrameworkTooutputPath>
+        <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
@@ -23,15 +27,15 @@
 
     <ItemGroup>
         <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.3.1" />
-        <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.0" />
         <PackageReference Include="Topshelf" Version="4.3.0" />
         <PackageReference Include="TopShelf.ServiceInstaller" Version="4.3.0" />
-        <PackageReference Include="MassTransit" Version="8.3.1" />
+        <PackageReference Include="MassTransit" Version="8.3.4" />
         <PackageReference Include="MassTransit.Extensions.Hosting.RabbitMq" Version="1.0.11" />
         <PackageReference Include="MassTransit.Extensions.Logging" Version="5.5.6" />
-        <PackageReference Include="MassTransit.RabbitMQ" Version="8.3.1" />
+        <PackageReference Include="MassTransit.RabbitMQ" Version="8.3.4" />
     </ItemGroup>
 
     <ItemGroup>
