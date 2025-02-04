@@ -2,20 +2,19 @@
 
 public static class RuntimeExtension
 {
-    public static IConfiguration AddRuntimeServices(this IConfigurationBuilder configBuilder, out AppSetting appSetting)
-    {
-        configBuilder
-	 .SetBasePath(Directory.GetCurrentDirectory())
-	 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-	 .AddJsonFile("appsettings.dev.json", optional: true, reloadOnChange: true)
-	 .AddEnvironmentVariables();
-	 
-        var config = configBuilder.Build();
-        
-        appSetting = config.GetSection("AppSetting").Get<AppSetting>();
-        return config;
-    }
+	public static IConfiguration AddRuntimeServices(this IConfigurationBuilder configBuilder, out AppSetting appSetting)
+	{
+		configBuilder
+			.SetBasePath(Directory.GetCurrentDirectory())
+			.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+			.AddJsonFile("appsettings.dev.json", optional: true, reloadOnChange: true)
+			.AddEnvironmentVariables();
 
+		var config = configBuilder.Build();
+
+		appSetting = config.GetSection("AppSetting").Get<AppSetting>();
+		return config;
+	}
 }
 
 
