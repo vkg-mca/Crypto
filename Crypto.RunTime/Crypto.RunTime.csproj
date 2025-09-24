@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net9.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <LangVersion>latest</LangVersion>
@@ -13,16 +13,16 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.1" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.1" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="9.0.1" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="9.0.1" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.1" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.1" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.1" />
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.1" />
-        <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.1" />
-        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.1" />
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.9" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.9" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="9.0.9" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="9.0.9" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.9" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.9" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.9" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.9" />
+        <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.9" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.9" />
         <PackageReference Include="Topshelf" Version="4.3.0" />
     </ItemGroup>
 
